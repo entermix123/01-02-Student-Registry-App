@@ -41,6 +41,7 @@ jobs:
   
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Deploy to production
         uses: JorgeLNJunior/render-deploy@v1.4.3
