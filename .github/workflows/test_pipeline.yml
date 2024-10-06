@@ -32,8 +32,9 @@ jobs:
         node-version: 20    
     - name: install dependencies                     
       run: npm install
-    - name: start app                   
+    - name: Start the app in the background                   
       run: npm run start &            // added start the app step and '&' is background mode to avoid blocking the terminal
+      shell: bash
     - name: execute tests                            
       run: npm test
     - run: npm ci                                    
