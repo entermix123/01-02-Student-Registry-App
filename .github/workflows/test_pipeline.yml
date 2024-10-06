@@ -1,4 +1,4 @@
-name: Build, Start and Test
+name: Build-Start-Test
 
 on:
   push:
